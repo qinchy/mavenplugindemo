@@ -30,12 +30,12 @@ import java.io.IOException;
  * @goal touch
  * @phase package
  */
-@Mojo(name="hello")
+@Mojo(name = "hello")
 public class HelloMojo extends AbstractMojo {
     /**
      * Location of the file.
      *
-     * @parameter property="${project.build.directory}"
+     * @parameter expression="${outputDirectory}"
      * @required
      */
     private String outputDirectory;

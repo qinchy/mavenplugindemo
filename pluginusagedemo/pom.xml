@@ -28,13 +28,13 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>hello</goal>
+                            <goal>touch</goal>
                         </goals>
                         <phase>package</phase>
                     </execution>
                 </executions>
                 <configuration>
-                    <project.build.directory>d:\\test</project.build.directory>
+                    <outputDirectory>d:/test</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
