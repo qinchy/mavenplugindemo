@@ -1,4 +1,4 @@
-package com.qinchy.plugin;
+package com.qinchy.hellomavenplugin;
 
 /*
  * Copyright 2001-2005 The Apache Software Foundation.
@@ -26,7 +26,7 @@ import java.io.IOException;
 
 /**
  * touch a file on hellomavenplugin.
- *
+ * mvn hello:touch
  * @goal touch
  * @phase package
  */
