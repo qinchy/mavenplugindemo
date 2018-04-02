@@ -62,7 +62,7 @@ public class HelloMojo extends AbstractMojo {
                 try {
                     w.close();
                 } catch (IOException e) {
-                    // ignore
+                    getLog().error("close file error!", e);
                 }
             }
         }
