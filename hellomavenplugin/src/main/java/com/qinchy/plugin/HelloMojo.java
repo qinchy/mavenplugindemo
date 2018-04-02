@@ -25,7 +25,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * Goal which touches a timestamp file.
+ * touch a file on hellomavenplugin.
  *
  * @goal touch
  * @phase package
