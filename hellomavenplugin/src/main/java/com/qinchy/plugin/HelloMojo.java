@@ -1,4 +1,4 @@
-package com.qinchy;
+package com.qinchy.plugin;
 
 /*
  * Copyright 2001-2005 The Apache Software Foundation.
@@ -38,11 +38,11 @@ public class HelloMojo extends AbstractMojo {
      * @parameter expression="${outputDirectory}"
      * @required
      */
-    private String outputDirectory;
+    private File outputDirectory;
 
     public void execute()
             throws MojoExecutionException {
-        File f = new File(outputDirectory);
+        File f = outputDirectory;
 
         if (!f.exists()) {
             f.mkdirs();
