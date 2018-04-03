@@ -5,13 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 @RestController
 @RequestMapping(path = "/test")
 public class TestController {
 
     @Api(desc="测试",author = "qinchy")
     @GetMapping(path = "/test")
-    public String test(String name){
-        return "hello:"+name;
+    public Date test(String name){
+        return new Date();
     }
 }
